@@ -17,3 +17,9 @@ C:\Users\rodnovas\Desktop\TP-02 - Alumno\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\rodnovas\Desktop\TP-02 - Alumno\TP-02\Entidades\obj\Debug\Entidades.pdb
 C:\Users\rodnovas\Desktop\TP-02 - Alumno\TP-02\Entidades\bin\Debug\Entidades.dll
 C:\Users\rodnovas\Desktop\TP-02 - Alumno\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\rodnovas\source\repos\TPS\TP-02-Rodrigo-Novas\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\rodnovas\source\repos\TPS\TP-02-Rodrigo-Novas\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\rodnovas\source\repos\TPS\TP-02-Rodrigo-Novas\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\rodnovas\source\repos\TPS\TP-02-Rodrigo-Novas\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\rodnovas\source\repos\TPS\TP-02-Rodrigo-Novas\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\rodnovas\source\repos\TPS\TP-02-Rodrigo-Novas\TP-02\Entidades\obj\Debug\Entidades.pdb

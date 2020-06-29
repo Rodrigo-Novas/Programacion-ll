@@ -41,7 +41,7 @@ namespace Entidades
         /// <returns>Retorna el metodo mostrar</returns>
         public override string ToString()
         {
-            return this.Mostrar(this, ETipo.Todos);
+            return Estacionamiento.Mostrar(this, ETipo.Todos);
         }
         #endregion
 
@@ -54,7 +54,7 @@ namespace Entidades
         /// <param name="c">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns>Retorna datos de estacionamiento</returns>
-        public  string Mostrar(Estacionamiento c, ETipo tipo)
+        public static string Mostrar(Estacionamiento c, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
 
