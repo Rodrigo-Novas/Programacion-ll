@@ -27,6 +27,11 @@ namespace FrontEnd
 
         }
 
+        /// <summary>
+        /// Evento para agregar paquete a correo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
@@ -43,7 +48,11 @@ namespace FrontEnd
             
         }
 
-
+        /// <summary>
+        /// Informa estado del paquete e invoca el metodo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void paq_InformaEstado(object sender, EventArgs e)
         {
             if (this.InvokeRequired)
@@ -56,6 +65,10 @@ namespace FrontEnd
                 ActualizarEstados();
             }
         }
+
+        /// <summary>
+        /// Actualiza el estado
+        /// </summary>
         private void ActualizarEstados()
         {
             lstEstadoEntregado.Items.Clear();
@@ -64,25 +77,37 @@ namespace FrontEnd
 
             foreach (Paquete p in correo.Paquetes)
             {
+                try
+                { 
                 if (p.Estado == Paquete.EEstado.ingresado)
                 {
-                    lstEstadoIngresado.Items.Add(p.ToString());
+                    lstEstadoIngresado.Items.Add(p);
 
                 }
                 if(p.Estado == Paquete.EEstado.enViaje)
                 {
-                    lstEstadoEnViaje.Items.Add(p.ToString());
+                    lstEstadoEnViaje.Items.Add(p);
                     lstEstadoIngresado.Items.Clear();
                 }
                 if(p.Estado == Paquete.EEstado.Entregado)
                 {
-                    lstEstadoEntregado.Items.Add(p.ToString());
+                    lstEstadoEntregado.Items.Add(p);
                     
                     lstEstadoEnViaje.Items.Clear();
+                }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
 
+        /// <summary>
+        /// Finaliza los hilos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmPpal_FormClosing(object sender, FormClosingEventArgs e)
         {
             correo.FinEntregas();
@@ -104,7 +129,7 @@ namespace FrontEnd
                     rtbMostrar.Text = ((Correo)elemento).MostrarDatos((Correo)elemento);
 
                 }
-                if (elemento is Paquete)
+               else if (elemento is Paquete)
                 {
                   rtbMostrar.Text = ((Paquete)elemento).MostrarDatos((Paquete)elemento);
                 }
@@ -114,12 +139,20 @@ namespace FrontEnd
             }
         }
 
-
+        /// <summary>
+        /// Muestra todos los paquetes en el correo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
         }
-
+        /// <summary>
+        /// Muestra el paquete seleccionado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mostrarToolMenuStripItem_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem); //no funciona esta parte

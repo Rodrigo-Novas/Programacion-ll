@@ -107,3 +107,16 @@ C:\Users\rodnovas\source\repos\TP4-Rodrigo Novas\FrontEnd\bin\Debug\Backend.dll
 C:\Users\rodnovas\source\repos\TP4-Rodrigo Novas\FrontEnd\bin\Debug\Backend.pdb
 C:\Users\rodnovas\source\repos\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrontEnd.exe.config
 C:\Users\rodnovas\source\repos\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrmPpal.csproj.CopyComplete
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\bin\Debug\FrontEnd.exe.config
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\bin\Debug\FrontEnd.exe
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\bin\Debug\FrontEnd.pdb
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrmPpal.csprojAssemblyReference.cache
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrontEnd.frmPpal.resources
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrontEnd.Properties.Resources.resources
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrmPpal.csproj.GenerateResource.cache
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrmPpal.csproj.CoreCompileInputs.cache
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrmPpal.csproj.CopyComplete
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrontEnd.exe
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\bin\Debug\BackEndDao.dll
+C:\Users\rodnovas\source\repos\TPS\TP4-Rodrigo Novas\FrontEnd\bin\Debug\BackEndDao.pdb

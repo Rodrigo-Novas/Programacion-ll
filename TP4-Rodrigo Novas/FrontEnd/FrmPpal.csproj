@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Backend\Backend.csproj">
-      <Project>{47a9144d-5b15-40c3-a908-b8b68b0a6889}</Project>
-      <Name>Backend</Name>
+    <ProjectReference Include="..\BackEndDao\BackEndDao.csproj">
+      <Project>{25355112-20c8-4246-9167-87b61a38dac1}</Project>
+      <Name>BackEndDao</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
