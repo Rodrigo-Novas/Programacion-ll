@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using Backend;
+using Backend.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Testeos_Unitarios
 {
@@ -11,20 +12,19 @@ namespace Testeos_Unitarios
 
         [TestMethod]
 
-        
+        [ExpectedException(typeof(TrackingIdRepetidoException))]
         public void TestPaquete()
         {
             //arrange
+            Correo c = new Correo();
             Paquete p = new Paquete("san lorenzo", "10000");
             Paquete p2 = new Paquete("san lorenzo", "10000");
-            bool retorno;
-
+          
             //Act
-            retorno = p == p2;
-
+            c += p;
+            c += p2;
             //Assert
-            Assert.IsTrue(retorno);
-
+            Assert.Fail();
         }
 
         

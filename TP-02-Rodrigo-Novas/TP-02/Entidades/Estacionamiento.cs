@@ -11,30 +11,38 @@ namespace Entidades
     /// </summary>
     public class Estacionamiento
     {
-        #region "Enumeradores"
+        /// <summary>
+        /// Enumerador de tipo automovil que estacionara
+        /// </summary>
         public enum ETipo
         {
             Moto, Automovil, Camioneta, Todos
         }
-        #endregion
+       
 
-        #region "Atributos"
+    
         List<Vehiculo> vehiculos;
         int espacioDisponible;
-        #endregion
+        
 
-        #region "Constructores"
+        /// <summary>
+        /// Constructor estacionamiento
+        /// </summary>
         private Estacionamiento()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+        /// <summary>
+        /// CONSTRUCTOR ESTACIONEMIENTO INCIALIZA ESPACIOS DISPONIBLES
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Estacionamiento(int espacioDisponible):this()
         {
             this.espacioDisponible = espacioDisponible;
         }
-        #endregion
 
-        #region "Metodos Sobrecargas"
+
+        
         /// <summary>
         /// Muestro el estacionamiento y TODOS los vehículos
         /// </summary>
@@ -43,9 +51,9 @@ namespace Entidades
         {
             return Estacionamiento.Mostrar(this, ETipo.Todos);
         }
-        #endregion
+        
 
-        #region "Métodos"
+
 
         /// <summary>
         /// Expone los datos del elemento y su lista (incluidas sus herencias)
@@ -67,7 +75,7 @@ namespace Entidades
                     case ETipo.Camioneta:
                         if(v is Camioneta) //para que solo muestre el mostrar de camioneta
                         { 
-                        sb.AppendLine(v.Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         break;
                     case ETipo.Moto:
@@ -75,7 +83,7 @@ namespace Entidades
                         {
                             sb.AppendLine(v.Mostrar());
                         }
-                            break;
+                        break;
                     case ETipo.Automovil:
                         if (v is Automovil)
                         {
@@ -90,9 +98,9 @@ namespace Entidades
 
             return sb.ToString();
         }
-        #endregion
+        
 
-        #region "Operadores"
+        
         /// <summary>
         /// Agregará un elemento a la lista
         /// </summary>
@@ -101,15 +109,19 @@ namespace Entidades
         /// <returns>retorna estacionamiento cargado</returns>
         public static Estacionamiento operator +(Estacionamiento c, Vehiculo p)
         {
-            foreach (Vehiculo v in c.vehiculos)
-            {
-                if (v == p)
-                { 
-                    return c;
+            if(c.vehiculos.Count < c.espacioDisponible)
+            { 
+                foreach (Vehiculo v in c.vehiculos)
+                {
+                    if (v == p)
+                    { 
+                        return c;
             
+                    }
                 }
+                c.vehiculos.Add(p);
             }
-            c.vehiculos.Add(p);
+           
             return c;
         }
         /// <summary>
@@ -131,6 +143,6 @@ namespace Entidades
 
             return c;
         }
-        #endregion
+        
     }
 }

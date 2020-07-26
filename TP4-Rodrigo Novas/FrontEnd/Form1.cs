@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Backend;
 using Backend.Archivos;
 using Backend.Interfaces;
+using Backend.DAO;
 namespace FrontEnd
 {
     public partial class frmPpal : Form
@@ -34,10 +35,11 @@ namespace FrontEnd
         /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
-            paquete.InformaEstado += paq_InformaEstado;
             try
             {
+                paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
+            paquete.InformaEstado += paq_InformaEstado;
+            
                 correo = correo + paquete;
             }
             catch(TrackingIdRepetidoException ex)
@@ -55,6 +57,8 @@ namespace FrontEnd
         /// <param name="e"></param>
         private void paq_InformaEstado(object sender, EventArgs e)
         {
+            try
+            { 
             if (this.InvokeRequired)
             {
                 Paquete.DelegadoEstado d = new Paquete.DelegadoEstado(paq_InformaEstado);
@@ -62,7 +66,23 @@ namespace FrontEnd
             }
             else
             {
-                ActualizarEstados();
+                    if (((Paquete)sender).Estado == Paquete.EEstado.Entregado)
+                    {
+                        try
+                        {
+                            PaqueteDAO.Insertar(((Paquete)sender));
+                        }
+                        catch(Exception E)
+                        {
+                            MessageBox.Show(E.Message);
+                        }
+                    }
+                        ActualizarEstados();
+            }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -155,12 +175,17 @@ namespace FrontEnd
         /// <param name="e"></param>
         private void mostrarToolMenuStripItem_Click(object sender, EventArgs e)
         {
-            this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem); //no funciona esta parte
+             
         }
 
         private void grpbEstadoPaquete_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void mostarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
         }
     }
 }

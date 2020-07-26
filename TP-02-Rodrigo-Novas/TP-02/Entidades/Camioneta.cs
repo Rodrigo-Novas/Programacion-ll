@@ -9,15 +9,20 @@ namespace Entidades
     public class Camioneta:Vehiculo //hereda de vehiculo
     {
 
-        #region "Constructores"
+      /// <summary>
+      /// Constructor Para camionera
+      /// </summary>
+      /// <param name="marca"></param>
+      /// <param name="codigo"></param>
+      /// <param name="color"></param>
         public Camioneta(EMarca marca, string codigo, ConsoleColor color)
             : base(codigo, marca, color)
         {
         }
-        #endregion
+        
 
 
-        #region "Propiedades"
+       
         /// <summary>
         /// Retorna el tamaño de camioneta (Las camionetas son grandes)
         /// </summary>
@@ -28,9 +33,9 @@ namespace Entidades
                 return ETamanio.Grande;
             }
         }
-        #endregion
+        
 
-        #region "Metodos sobrescritos"
+        
         /// <summary>
         /// Muestra los datos de camioneta
         /// </summary>
@@ -41,13 +46,13 @@ namespace Entidades
 
             sb.AppendLine("CAMIONETA");
             sb.AppendLine(base.Mostrar());  //como traer base si no tiene metodo motrar
-            sb.AppendLine(string.Format("TAMAÑO: {0}", this.Tamanio.ToString()));
+            sb.AppendLine(string.Format("TAMAÑO: {0}", this.Tamanio));
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();
         }
 
-        #endregion 
+        
     }
 }

@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using Backend.Excepciones;
 namespace Backend.DAO
 {
-   static class PaqueteDAO
+  public static class PaqueteDAO
     {
         private static SqlCommand sqlCommand;
         private static SqlConnection sqlConnection;

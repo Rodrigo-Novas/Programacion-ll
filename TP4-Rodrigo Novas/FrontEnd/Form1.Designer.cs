@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lstEstadoIngresado = new System.Windows.Forms.ListBox();
             this.lstEstadoEnViaje = new System.Windows.Forms.ListBox();
             this.lstEstadoEntregado = new System.Windows.Forms.ListBox();
@@ -43,11 +44,11 @@
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.mtxtTrackingID = new System.Windows.Forms.MaskedTextBox();
             this.grpbPaquete = new System.Windows.Forms.GroupBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mostrarToolMenuStripItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsListas = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mostarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpbEstadoPaquete.SuspendLayout();
             this.grpbPaquete.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.cmsListas.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstEstadoIngresado
@@ -68,6 +69,7 @@
             // 
             // lstEstadoEntregado
             // 
+            this.lstEstadoEntregado.ContextMenuStrip = this.cmsListas;
             this.lstEstadoEntregado.FormattingEnabled = true;
             this.lstEstadoEntregado.Location = new System.Drawing.Point(456, 35);
             this.lstEstadoEntregado.Name = "lstEstadoEntregado";
@@ -195,22 +197,19 @@
             this.grpbPaquete.TabStop = false;
             this.grpbPaquete.Text = "Paquete";
             // 
-            // menuStrip1
+            // cmsListas
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mostrarToolMenuStripItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(691, 24);
-            this.menuStrip1.TabIndex = 10;
-            this.menuStrip1.Text = "menuStrip1";
+            this.cmsListas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mostarToolStripMenuItem});
+            this.cmsListas.Name = "cmsListas";
+            this.cmsListas.Size = new System.Drawing.Size(116, 26);
             // 
-            // mostrarToolMenuStripItem
+            // mostarToolStripMenuItem
             // 
-            this.mostrarToolMenuStripItem.Name = "mostrarToolMenuStripItem";
-            this.mostrarToolMenuStripItem.Size = new System.Drawing.Size(84, 20);
-            this.mostrarToolMenuStripItem.Text = "MostrarItem";
-            this.mostrarToolMenuStripItem.Click += new System.EventHandler(this.mostrarToolMenuStripItem_Click);
+            this.mostarToolStripMenuItem.Name = "mostarToolStripMenuItem";
+            this.mostarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.mostarToolStripMenuItem.Text = "Mostrar";
+            this.mostarToolStripMenuItem.Click += new System.EventHandler(this.mostarToolStripMenuItem_Click);
             // 
             // frmPpal
             // 
@@ -220,9 +219,7 @@
             this.Controls.Add(this.grpbPaquete);
             this.Controls.Add(this.grpbEstadoPaquete);
             this.Controls.Add(this.rtbMostrar);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPpal";
@@ -234,10 +231,8 @@
             this.grpbEstadoPaquete.PerformLayout();
             this.grpbPaquete.ResumeLayout(false);
             this.grpbPaquete.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.cmsListas.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -258,8 +253,8 @@
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.MaskedTextBox mtxtTrackingID;
         private System.Windows.Forms.GroupBox grpbPaquete;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mostrarToolMenuStripItem;
+        private System.Windows.Forms.ContextMenuStrip cmsListas;
+        private System.Windows.Forms.ToolStripMenuItem mostarToolStripMenuItem;
     }
 }
 

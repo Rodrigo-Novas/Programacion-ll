@@ -81,12 +81,18 @@ namespace Backend
         /// </summary>
         public void mockCicloDeVida()
         {
+        
+            if(this.InformaEstado == null)
+            {
+
+                throw new Exception("El paquete no tiene manejador");
+            }
 
             do
             {
                 this.InformaEstado.Invoke(this, null);
 
-                Thread.Sleep(5000);
+                Thread.Sleep(4000);
                 if (this.Estado == EEstado.ingresado)
                 {
                     this.Estado = EEstado.enViaje;
@@ -101,7 +107,9 @@ namespace Backend
            
 
             this.InformaEstado.Invoke(this, null);
-            PaqueteDAO.Insertar(this);
+            
+           
+            
         }
 
         /// <summary>

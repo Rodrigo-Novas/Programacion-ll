@@ -10,18 +10,32 @@ namespace Entidades
 {
     public class Automovil:Vehiculo
     {
-        #region "Enumeradores"
-        public enum ETipo { Monovolumen, Sedan }
-        #endregion
+        /// <summary>
+        /// Por defecto, TIPO será Monovolumen
+        /// </summary>
+        /// <param name="marca">marca del vehjiculo</param>
+        /// <param name="codigo">codigo unico del vehiculo</param>
+        /// <param name="color">color del vehiculo</param>
+        public enum ETipo
+        { 
+            Monovolumen, 
+            Sedan 
+        }
+        
 
-        #region "Atributos"
+       //atributos
         ETipo tipo;
-        #endregion
+       
 
-
-        #region "Constructores"
-
-        public Automovil (EMarca marca, string codigo, ConsoleColor color, ETipo tipo) : base(codigo, marca, color)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="marca"></param>Marca del auto
+        /// <param name="codigo"></param>codigo del auto
+        /// <param name="color"></param>color de auto
+        /// <param name="tipo"></param>tipo de auto
+        public Automovil (EMarca marca, string codigo, ConsoleColor color, ETipo tipo) 
+            : base(codigo, marca, color)
         {
             this.tipo = tipo;
         }
@@ -30,23 +44,22 @@ namespace Entidades
         /// <summary>
         /// Por defecto, TIPO será Monovolumen
         /// </summary>
-        /// <param name="marca"></param>
-        /// <param name="chasis"></param>
-        /// <param name="color"></param>
-        public Automovil(EMarca marca, string codigo, ConsoleColor color):this(marca, codigo, color, ETipo.Monovolumen)
-           
-        {
-            
+        /// <param name="marca"></param>marca del auto
+        /// <param name="chasis"></param>chasis del auto
+        /// <param name="color"></param>color del auto
+        public Automovil(EMarca marca, string codigo, ConsoleColor color)
+            :this(marca, codigo, color, ETipo.Monovolumen)          
+        {           
         }
 
 
-        #endregion
 
 
-        #region "Propiedades"
+
+       
 
         /// <summary>
-        /// Los automoviles son medianos
+        ///ReadOnly Los automoviles son medianos
         /// </summary>
         /// 
         protected override ETamanio Tamanio
@@ -56,9 +69,9 @@ namespace Entidades
                 return ETamanio.Mediano;
             }
         }
-        #endregion
+       
 
-        #region "Metodos sobrescritos"
+      
 
         /// <summary>
         /// Muestra datos de automovil
@@ -70,13 +83,13 @@ namespace Entidades
 
             sb.AppendLine("AUTOMOVIL");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine(string.Format("TAMAÑO : {0}",  this.Tamanio.ToString()));
+            sb.AppendLine(string.Format("TAMAÑO : {0}",  this.Tamanio));
             sb.AppendLine(string.Format("TIPO : {0}", this.tipo));
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();
         }
-        #endregion
+       
     }
 }

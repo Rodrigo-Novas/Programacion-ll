@@ -8,13 +8,13 @@ namespace Entidades
 {
     public class Moto: Vehiculo
     {
-        #region "Constructores"
-        public Moto(EMarca marca, string codigo, ConsoleColor color): base(codigo, marca, color)
+      
+        public Moto(EMarca marca, string codigo, ConsoleColor color)
+            : base(codigo, marca, color)
         {
         }
-        #endregion
+       
 
-        #region "Propiedades"
         /// <summary>
         /// Las motos son chicas
         /// </summary>
@@ -25,9 +25,9 @@ namespace Entidades
                 return ETamanio.Chico;
             }
         }
-        #endregion
+       
 
-        #region "Metodos sobreescritos"
+      
         /// <summary>
         /// Muestra datos de moto
         /// </summary>
@@ -37,13 +37,13 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("MOTO");
-            sb.AppendLine(base.ToString());
-            sb.AppendLine(string.Format("TAMAÑO : {0}", this.Tamanio.ToString()));
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine(string.Format("TAMAÑO : {0}", this.Tamanio));
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();
         }
-        #endregion
+       
     }
 }
