@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rodnovas\\source\\repos\\TPS\\TP4-Rodrigo Novas\\Backend\\Backend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rodnovas\\source\\repos\\TPS\\TP4-Rodrigo Novas\\Backend\\Backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rodnovas\\source\\repos\\TPS\\TP4-Rodrigo Novas\\Backend\\Backend.csproj",
+        "projectName": "Backend",
+        "projectPath": "C:\\Users\\rodnovas\\source\\repos\\TPS\\TP4-Rodrigo Novas\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\rodnovas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodnovas\\source\\repos\\TPS\\TP4-Rodrigo Novas\\Backend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rodnovas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

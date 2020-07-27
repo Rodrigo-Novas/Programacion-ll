@@ -1,0 +1,32 @@
+Jornada: 
+Clase de: Legislacion Por: 
+Nombre completo: Roberto, Juarez
+Nacionalidad: Argentino
+Dni: 32234456
+
+El legajo es: 2
+
+
+CLASES DEL DIA: 
+Legislacion
+
+
+Alumnos: 
+Nombre completo: Miguel, Hernandez
+Nacionalidad: Extranjero
+Dni: 92264456
+
+El legajo es: 4
+
+Su clase es: Legislacion
+El estado de la cuenta es: AlDia
+
+Nombre completo: Rodrigo, Smith
+Nacionalidad: Argentino
+Dni: 22236456
+
+El legajo es: 8
+
+Su clase es: Legislacion
+El estado de la cuenta es: AlDia
+

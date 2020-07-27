@@ -1,0 +1,18 @@
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.dll
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.pdb
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.dll
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.pdb
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.dll
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.pdb
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.dll
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.pdb
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
+C:\Users\rodnovas\source\repos\TPS\Novas.Rodrigo.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb
